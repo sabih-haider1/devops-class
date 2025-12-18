@@ -1,0 +1,11 @@
+name: wf_dev_pr
+on:
+  pull_request:
+    branches:
+      - develop
+jobs:
+  dev_pr_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Weclome Step
+        run: echo "Welcome To the GitHUb Actions"
